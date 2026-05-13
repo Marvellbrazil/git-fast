@@ -1,3 +1,29 @@
+# git-fast
+### Just abbreviation of git commands, time saved, nothing more.
+
+
+---
+
+## How to apply it on my pc?
+
+```terminal
+# Clone the repository
+git clone https://github.com/Marvellbrazil/git-fast
+
+# If you're using Powershell (Windows Default)
+cd git-fast/windows
+# TODO: #1 blablabla and more
+
+# Otherwise if you're using Bash/Zsh (Linux & MacOS Default)
+cd git-fast/linux
+# TODO: blablabla and more
+
+```
+
+---
+
+<code>Information</code>
+
 <table>
     <thead>
         <tr>
@@ -11,7 +37,7 @@
             <td>git add [args]</td>
         </tr>
         <tr>
-            <td>gcm [args]</td>
+            <td>gcom [args]</td>
             <td>git commit -m [args]</td>
         </tr>
         <tr>
@@ -31,7 +57,7 @@
             <td>git diff</td>
         </tr>
         <tr>
-            <td>gl</td>
+            <td>glog</td>
             <td>git log -1 --stat</td>
         </tr>
         <tr>
@@ -49,6 +75,10 @@
         <tr>
             <td>gf [args]</td>
             <td>git fetch [args]</td>
+        </tr>
+        <tr>
+            <td>gnt</td>
+            <td>git init</td>
         </tr>
     </tbody>
 </table>
