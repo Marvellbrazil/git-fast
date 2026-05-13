@@ -1,0 +1,11 @@
+function gs() { git status }
+function ga() { git add $args }
+function gcom() { git commit -m $args }
+function gd() { git diff }
+function gl() { git log -1 --stat }
+function gpus() { git push $args }
+function gpul() { git pull $args }
+function gr() { git remote $args }
+function gcon() { git config $args }
+gclo() { git clone $args }
+gf() { git fetch $args }

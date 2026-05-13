@@ -1,0 +1,11 @@
+function gs() { git status; }
+function ga() { git add "$@"; }
+function gcom() { git commit -m "$@"; }
+function gd() { git diff; }
+function gl() { git log -1 --stat; }
+function gpus() { git push "$@"; }
+function gpul() { git pull "$@"; }
+function gr() { git remote "$@"; }
+function gcon() { git config "$@"; }
+gclo() { git clone "$@"; }
+gf() { git fetch "$@"; }
