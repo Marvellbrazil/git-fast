@@ -11,11 +11,11 @@
 git clone https://github.com/Marvellbrazil/git-fast
 
 # If you're using Powershell (Windows Default)
-cd git-fast/windows
+cd git-fast/powershell
 # TODO: #1 blablabla and more
 
 # Otherwise if you're using Bash/Zsh (Linux & MacOS Default)
-cd git-fast/linux
+cd git-fast/unix
 # TODO: blablabla and more
 
 ```
