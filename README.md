@@ -4,81 +4,60 @@
 
 ---
 
-## How to apply it on my pc?
+## How to apply it on my PC?
 
-```terminal
+```bash
 # Clone the repository
 git clone https://github.com/Marvellbrazil/git-fast
-
-# If you're using Powershell (Windows Default)
-cd git-fast/powershell
-# TODO: #1 blablabla and more
-
-# Otherwise if you're using Bash/Zsh (Linux & MacOS Default)
-cd git-fast/unix
-# TODO: blablabla and more
-
 ```
+
+### PowerShell (Windows)
+
+```powershell
+cd git-fast/powershell
+
+# Run the installer (it will add the aliases to your PowerShell profile automatically)
+.\install.ps1
+```
+
+> The script appends the aliases to your `$PROFILE` file and closes the terminal after 5 seconds.  
+> If a previous installation is detected, it updates the block in-place instead of duplicating it.
 
 ---
 
-<code>Information</code>
+### Bash / Zsh (Linux & macOS)
 
-<table>
-    <thead>
-        <tr>
-            <th>Alias</th>
-            <th>Command</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>ga [args]</td>
-            <td>git add [args]</td>
-        </tr>
-        <tr>
-            <td>gcom [args]</td>
-            <td>git commit -m [args]</td>
-        </tr>
-        <tr>
-            <td>gpus [args]</td>
-            <td>git push [args]</td>
-        </tr>
-        <tr>
-            <td>gpul [args]</td>
-            <td>git pull [args]</td>
-        </tr>
-        <tr>
-            <td>gs</td>
-            <td>git status</td>
-        </tr>
-        <tr>
-            <td>gd</td>
-            <td>git diff</td>
-        </tr>
-        <tr>
-            <td>glog</td>
-            <td>git log -1 --stat</td>
-        </tr>
-        <tr>
-            <td>gr [args]</td>
-            <td>git remote [args]</td>
-        </tr>
-        <tr>
-            <td>gcon [args]</td>
-            <td>git config [args]</td>
-        </tr>
-        <tr>
-            <td>gclo [args]</td>
-            <td>git clone [args]</td>
-        </tr>
-        <tr>
-            <td>gf [args]</td>
-            <td>git fetch [args]</td>
-        </tr>
-        <tr>
-            <td>gnt</td>
-            <td>git init</td>
-        </tr>
-    </tbody>
-</table>
+```bash
+cd git-fast/unix
+
+# Make the script executable, then run it
+chmod +x install.sh
+./install.sh
+```
+
+> On **macOS** the aliases are written to `~/.zshrc`.  
+> On **Linux** the aliases are written to `~/.bashrc`.  
+> Reload your shell after installation:
+> ```bash
+> source ~/.bashrc   # Linux
+> source ~/.zshrc    # macOS
+> ```
+
+---
+
+## Aliases
+
+| Alias | Command |
+|---|---|
+| `gs` | `git status` |
+| `ga [args]` | `git add [args]` |
+| `gcom [args]` | `git commit -m [args]` |
+| `gd` | `git diff` |
+| `glog` | `git log -1 --stat` |
+| `gpus [args]` | `git push [args]` |
+| `gpul [args]` | `git pull [args]` |
+| `gr [args]` | `git remote [args]` |
+| `gcon [args]` | `git config [args]` |
+| `gclo [args]` | `git clone [args]` |
+| `gf [args]` | `git fetch [args]` |
+| `gnt` | `git init` |
